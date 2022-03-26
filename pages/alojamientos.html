@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <title>Alojamiento Argentina</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img id="logo-header" src="../img/logo.png" alt="" /></a>
+            <ul id="nav-bar">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="/pages/alojamientos.html">Alojamientos</a></li>
+                <li><a href="/pages/faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="/pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="filtros-busqueda">
+            <form action="">
+                <label for="filtros">Filtros</label>
+                <label for="provincia">Provincia:</label>
+                <select name="provincia" id="provincia">
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Cordoba">Córdoba</option>
+                    <option value="Neuquen">Neuquen</option>
+                </select>
+                <!-- Lo que ocurre es que no diferencia las option segun la provincia seleccionada, por lo tanto solo puse localidades dentro de la provincia de Buenos Aires -->
+                <label for="ciudad">Ciudad:</label>
+                <select name="ciudad" id="ciudad">
+                    <option value="bahia-blanca">Bahía Blanca</option>
+                    <option value="tandil">Tandil</option>
+                </select>
+                <button>Aplicar</button>
+            </form>
+        </div>
+        <!-- La consulta multiple realizaría las consultas en todos los alojamientos de la ciudad seleccionada anteriormente  -->
+        <div>
+            <h1 class="titulo-pregunta">¿Querés ahorrar tiempo?</h1>
+            <span>Utilizá el boton de busqueda múltiple y ahorrate cientos de formularios.</span>
+            <a href="consultamultiple.html"><button>Buscar</button></a>
+        </div>
+    </header>
+    <!-- En esta página se verían todos los alojamientos, aproximadamente 3 a lo ancho de pantalla en desktop, y en cascada en mobile -->
+    <main>
+        <div>
+            <!-- Hacer click en cada alojamiento te llevaría a la publicación específica del mismo, por eso por el momento solo el alojamiento1 tiene el href-->
+            <a href="alojamiento1.html">
+                <h1>Nombre del alojamiento</h1>
+            </a>
+            <a href="alojamiento1.html"><img src="../img/alojamiento1.jpg" alt="" width="50%"></a>
+            <ul>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat sed officiis, libero minima
+                    accusamus repellendus?</li>
+                <li>Nro. de habitaciones</li>
+                <li>Dirección</li>
+                <li>Teléfono</li>
+            </ul>
+        </div>
+
+        <div>
+            <h1>Nombre del alojamiento</h1>
+            <img src="../img/alojamiento2.jpg" alt="" width="50%">
+            <ul>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat sed officiis, libero minima
+                    accusamus repellendus?</li>
+                <li>Nro. de habitaciones</li>
+                <li>Dirección</li>
+                <li>Teléfono</li>
+            </ul>
+        </div>
+
+        <div>
+            <h1>Nombre del alojamiento</h1>
+            <img src="../img/alojamiento3.jpg" alt="" width="50%">
+            <ul>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat sed officiis, libero minima
+                    accusamus
+                    repellendus?</li>
+                <li>Nro. de habitaciones</li>
+                <li>Dirección</li>
+                <li>Teléfono</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <h1 id="h1-footer">Derechos reservados - Alojamientos Argentina 2022</h1>
+        <a href="../index.html"><img id="logo-footer" src="../img/logo.png" alt="" /></a>
+    </footer>
+</body>
+
+</html>

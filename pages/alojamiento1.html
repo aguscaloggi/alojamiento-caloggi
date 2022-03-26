@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <title>Alojamiento Argentina</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img id="logo-header" src="../img/logo.png" alt="" /></a>
+            <ul id="nav-bar">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="/pages/alojamientos.html">Alojamientos</a></li>
+                <li><a href="/pages/faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="/pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Aquí se mostrarían las fotos con un carrousel o similar -->
+        <div>
+            <h1>Nombre del alojamiento</h1>
+            <img src="../img/alojamiento1.jpg" alt="" width="50%">
+            <img src="../img/alojamiento1-2.jpg" alt="" width="50%">
+            <img src="../img/alojamiento1-3.jpg" alt="" width="50%">
+            <img src="../img/alojamiento1-4.jpg" alt="" width="50%">
+        </div>
+        <!-- Servicios que ofrece el alojamiento con descripciones breves -->
+        <div>
+            <h1>Servicios</h1>
+            <ul>
+                <li>TV</li>
+                <li>WiFi</li>
+                <li>Estacionamiento</li>
+                <li>Jacuzzi</li>
+                <li>Etc.</li>
+            </ul>
+        </div>
+        <!-- Todos los datos necesarios para que el cliente se comunique con el alojamiento -->
+        <div>
+            <h1>Contacto</h1>
+            <ul>
+                <li>Nro. de Telefono</li>
+                <li>Whatsapp</li>
+                <li>Instagram</li>
+                <li>Página web</li>
+            </ul>
+        </div>
+
+        <!-- Descripción del alojamiento, contando su ubicación, por qué elegir este lugar y no otro, alguna historia del lugar, etc. -->
+        <div>
+            <h1>Descripción</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim tempora laborum, magnam aut atque
+                inventore, maxime laboriosam repudiandae amet accusamus nemo tenetur dolorem incidunt magni totam
+                distinctio reiciendis aliquid illum nam illo nisi minima voluptas fugit! Assumenda nam provident
+                quibusdam illo totam recusandae pariatur? Aliquam, perspiciatis aut nostrum suscipit sequi fugit?
+                Provident quibusdam corporis consequatur ducimus, illum doloremque cumque. Dolor, minus? Itaque
+                architecto mollitia dolores repellat esse vero consequuntur suscipit aliquam nesciunt minus veniam
+                laboriosam quae provident, ea reiciendis ut, quasi, culpa voluptas obcaecati ab delectus corrupti. Iste
+                rem reprehenderit sunt impedit explicabo rerum nostrum magnam, quisquam repellendus nisi minus, amet a
+                animi? Dolorum incidunt atque rerum ipsa porro! Blanditiis minima architecto dicta voluptas, fuga at
+                iste aliquam? Illo qui, veritatis consectetur aperiam culpa ipsam! Porro doloribus esse reprehenderit
+                ea!</p>
+        </div>
+
+        <!-- Video del alojamiento en el caso de que tenga uno -->
+        <div>
+            <iframe width="1360" height="480" src="https://www.youtube.com/embed/GfX1W3l9D2s"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <!-- En el caso de que el cliente quiera consultar a un alojamiento en particular lo podrá hacer desde aquí -->
+        <div>
+            <h1 class="titulo-pregunta">Querés realizar tu consulta?</h1>
+            <form action="">
+                <div>
+                    <label for="flname">Nombre y Apellido completo:</label>
+                    <input type="text" id="flname" name="flname" size="40" required>
+                </div>
+                <div>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" size="35" required>
+                </div>
+                <div>
+                    <label for="entrada">Fecha de entrada:</label>
+                    <input type="date" name="entrada" id="entrada" required>
+                </div>
+                <div>
+                    <label for="salida">Fecha de salida:</label>
+                    <input type="date" name="salida" id="salida" required>
+                </div>
+                <div>
+                    <label for="mayores">Mayores:</label>
+                    <input type="number" name="mayores" id="mayores" required>
+                </div>
+                <div>
+                    <label for="menores">Menores:</label>
+                    <input type="number" name="menores" id="menores" required value="0">
+                </div>
+                <div>
+                    <label for="mensaje">Su consulta:</label><br>
+                    <textarea name="message" rows="10" cols="70"
+                        placeholder="Aquí podes consultar por algún servicio en específico que estés buscando,si acepta mascotas, etc..."></textarea>
+                </div>
+                <button>Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+        </div>
+
+        <!-- Ubicación del alojamiento -->
+        <div>
+            <h1>Ubicación del alojamiento</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1502.2080330660008!2d-71.26260214194149!3d-41.14727169482173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7cc870618299%3A0x84c50dec9aedad0a!2sBocacay%2070%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1648245024086!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p id="p-footer">Derechos reservados - Alojamientos Argentina 2022</p>
+        <a href="../index.html"><img id="logo-footer" src="../img/logo.png" alt="" /></a>
+    </footer>
+</body>
+
+</html>
