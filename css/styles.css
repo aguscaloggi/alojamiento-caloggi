@@ -6,9 +6,150 @@
   font-size: 16px;
   color: #333;
   text-decoration: none;
+  box-sizing: border-box;
+  list-style-type: none;
 }
 
-.titulo-pregunta {
+body {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #acb1b9 100%);
+}
+
+/* .navbar ul {
+  background-color: #333;
+  display: inline;
+}
+
+.navbar li {
+  float: right;
+}
+
+.navbar li a {
+  padding: 8px;
+  background-color: #333;
+  color: #fefefe;
+}
+
+.navbar li a:hover {
+  background-color: #111;
+}
+
+#logo-header {
+  display: inline-block;
+  vertical-align: top;
+  height: 60px;
+  width: 120px;
+}*/
+
+.tituloPregunta {
   font-weight: 600;
-  font-style: italic;
+  font-size: 17px;
+}
+
+/* alojamientos.html */
+.filters {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.filters__provincia {
+  border-radius: 2px;
+}
+
+.filters_button {
+  border-radius: 4px;
+}
+
+.consultamultiple {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.consultamultiple h1 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  height: 370px;
+  padding: 16px;
+  margin: 20px;
+}
+
+.card__title {
+  font-size: 18px;
+}
+
+.card__img {
+  width: 100%;
+}
+
+/* consultamultiple.html */
+.consultamultiple {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+#consultamultiple__img {
+  width: 100%;
+}
+
+.consultamultiple__form {
+  padding: 4px;
+}
+
+.consultamultiple__form input {
+  margin: 4px 2px;
+}
+.consultamultiple__form textarea {
+  margin: 4px 0;
+}
+
+/* faq.html */
+.faq {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 7px 5px;
+}
+
+.faq__pregunta {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+/* contacto.html */
+
+.contacto__form {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.contacto__titulo {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.contacto__pregunta {
+  font-weight: 600;
+}
+
+.contacto__pregunta2 {
+  font-weight: 600;
+}
+.contacto__form input {
+  margin: 4px 2px;
+}
+.contacto__form textarea {
+  margin: 4px 0;
 }
