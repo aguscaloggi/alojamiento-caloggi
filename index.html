@@ -16,46 +16,46 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <div class="navbar">
-          <!-- Logo momentaneo -->
-          <a href="../index.html"
-            ><img id="logo-header" src="../img/logo.png" alt=""
-          /></a>
-          <ul id="nav-bar">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="/pages/alojamientos.html">Alojamientos</a></li>
-            <li><a href="/pages/faq.html">Preguntas Frecuentes</a></li>
-            <li><a href="/pages/contacto.html">Contacto</a></li>
-          </ul>
-        </div>
+    <header class="header">
+      <!-- Logo momentaneo -->
+      <a href="../index.html"
+        ><img class="header__logo" src="../img/logo.png" alt=""
+      /></a>
+      <nav class="nav">
+        <ul class="nav__lista">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="/pages/alojamientos.html">Alojamientos</a></li>
+          <li><a href="/pages/faq.html">Preguntas Frecuentes</a></li>
+          <li><a href="/pages/contacto.html">Contacto</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
-      <!-- Sobre la imagen me gustaría poner un texto, y que la imagen quede con una especie de blur oscuro -->
-      <div>
-        <img
-          id="image-index"
-          src="img/index.jpg"
-          alt="Obelisco de Buenos Aires"
-          width="100%"
-        />
-        <!-- Debajo de la imagen algun texto que llame la atención del usuario -->
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident,
-          rerum, porro, in natus accusamus rem labore sed illum nobis cum
-          consequuntur modi culpa quam suscipit atque eos molestiae voluptas
-          voluptates?
-        </p>
-      </div>
+      <section class="hero">
+        <!-- Sobre la imagen me gustaría poner un texto, y que la imagen quede con una especie de blur oscuro -->
+        <div>
+          <img
+            class="hero__img"
+            src="img/index.jpg"
+            alt="Obelisco de Buenos Aires"
+            width="100%"
+          />
+          <!-- Debajo de la imagen algun texto que llame la atención del usuario -->
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident,
+            rerum, porro, in natus accusamus rem labore sed illum nobis cum
+            consequuntur modi culpa quam suscipit atque eos molestiae voluptas
+            voluptates?
+          </p>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <p id="p-footer">Derechos reservados - Alojamientos Argentina 2022</p>
+    <footer class="footer">
+      <p class="footer__p">Derechos reservados - Alojamientos Argentina 2022</p>
       <a href="../index.html"
-        ><img id="logo-footer" src="../img/logo.png" alt=""
+        ><img class="footer__logo" src="../img/logo.png" alt=""
       /></a>
     </footer>
   </body>

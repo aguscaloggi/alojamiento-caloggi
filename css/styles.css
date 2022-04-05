@@ -1,56 +1,102 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #333;
-  text-decoration: none;
-  box-sizing: border-box;
-  list-style-type: none;
+  background-image: linear-gradient(135deg, #b1b2b3 0%, #4a4b4d 100%);
 }
 
-body {
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #acb1b9 100%);
-}
+.header {
+  height: 50px;
+  width: 100%;
+  padding: 1rem;
 
-/* .navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color: #333;
-  display: inline;
 }
 
-.navbar li {
-  float: right;
+.header__logo {
+  max-height: 50px;
+  width: auto;
 }
 
-.navbar li a {
-  padding: 8px;
+.nav__lista {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+li a {
+  color: white;
+}
+
+.hero {
+  display: flex;
+}
+
+.footer {
+  height: 50px;
+  width: 100%;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color: #333;
-  color: #fefefe;
 }
 
-.navbar li a:hover {
-  background-color: #111;
+.footer__logo {
+  max-height: 50px;
+  width: auto;
 }
 
-#logo-header {
-  display: inline-block;
-  vertical-align: top;
-  height: 60px;
-  width: 120px;
-}*/
+.footer p {
+  color: white;
+}
 
 .tituloPregunta {
   font-weight: 600;
-  font-size: 17px;
+  font-size: 16px;
+}
+
+.titulo__pregunta {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 /* alojamientos.html */
+
 .filters {
+  display: flex;
+  flex-direction: column;
+}
+
+.filters__select {
   background-color: white;
   border-radius: 5px;
-  padding: 5px;
-  margin: 5px;
+  padding: 8px;
+  margin: 5px 8px;
+  width: fit-content;
+}
+
+.filters__label__select {
+  margin: 4px 0px;
 }
 
 .filters__provincia {
@@ -61,16 +107,25 @@ body {
   border-radius: 4px;
 }
 
-.consultamultiple {
+.filters__consultamultiple {
   background-color: white;
   border-radius: 5px;
-  padding: 5px;
-  margin: 5px;
+  padding: 8px;
+  margin: 5px 8px;
+  width: fit-content;
 }
 
 .consultamultiple h1 {
   font-size: 17px;
   font-weight: 500;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -84,11 +139,82 @@ body {
 
 .card__title {
   font-size: 18px;
+  margin: 0 0 2px 0;
 }
 
 .card__img {
   width: 100%;
+  max-width: 360px;
+  max-height: 200px;
 }
+
+.card__ul li {
+  list-style-type: none;
+}
+
+/* alojamientox.html */
+
+.alojamientox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 6px;
+}
+
+.alojamientox__title {
+  font-weight: 600;
+  font-size: 17px;
+  margin: 0 0 2px 0;
+}
+
+.alojamientox__img__container {
+  width: 50%;
+}
+
+.alojamientox__img {
+  width: 100%;
+}
+
+.alojamientox__info {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  width: fit-content;
+}
+
+.alojamientox__info ul {
+  list-style: none;
+}
+
+.alojamientox__descripcion {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.alojamientox__form {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.alojamientox__youtube {
+  width: 80%;
+}
+
+.alojamientox__maps {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
 
 /* consultamultiple.html */
 .consultamultiple {
@@ -128,6 +254,21 @@ body {
 
 /* contacto.html */
 
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contacto__preguntas {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
 .contacto__form {
   background-color: white;
   border-radius: 5px;
@@ -151,5 +292,5 @@ body {
   margin: 4px 2px;
 }
 .contacto__form textarea {
-  margin: 4px 0;
+  margin: 4px;
 }
