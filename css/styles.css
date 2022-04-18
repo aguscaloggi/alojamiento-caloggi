@@ -12,10 +12,15 @@ body {
   background-image: linear-gradient(135deg, #b1b2b3 0%, #4a4b4d 100%);
 }
 
+main {
+  margin: 0 3rem;
+}
+
+/* index.html */
+
 .header {
   height: 50px;
   width: 100%;
-  padding: 1rem;
 
   display: flex;
   flex-direction: row;
@@ -27,6 +32,7 @@ body {
 .header__logo {
   max-height: 50px;
   width: auto;
+  margin-left: 3rem;
 }
 
 .nav__lista {
@@ -34,6 +40,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  margin: 0 3.5rem 0 0;
 }
 
 li a {
@@ -44,13 +51,44 @@ li a {
   display: flex;
 }
 
+.hero__img {
+  margin: 0;
+  width: 100%;
+}
+
+.hero__texto {
+  background-color: white;
+  text-align: justify;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+.alojamientos__destacados {
+  color: black ;
+}
+
+.grid__card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 52px;
+}
+
+.card__destacada {
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  height: 370px;
+  padding: 16px;
+  margin: 0.5rem 0 1rem 0;
+}
+
 .footer {
   height: 50px;
   width: 100%;
-  padding: 1rem;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   background-color: #333;
@@ -59,9 +97,11 @@ li a {
 .footer__logo {
   max-height: 50px;
   width: auto;
+  margin-left: 3rem;
 }
 
-.footer p {
+.footer__p {
+  margin-right: 3.5rem;
   color: white;
 }
 
@@ -81,18 +121,19 @@ a {
 }
 
 /* alojamientos.html */
-
 .filters {
+  margin: 15px 3.5rem 0 3.5rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .filters__select {
   background-color: white;
   border-radius: 5px;
   padding: 8px;
-  margin: 5px 8px;
-  width: fit-content;
+  margin: 5px 0;
+  width: 49%;
 }
 
 .filters__label__select {
@@ -100,19 +141,34 @@ a {
 }
 
 .filters__provincia {
-  border-radius: 2px;
+  padding: 1px;
+  margin: 0 2px;
+  border-radius: 5px;
 }
 
-.filters_button {
-  border-radius: 4px;
+.filters__ciudad {
+  padding: 1px;
+  margin: 0 2px;
+  border-radius: 5px;
+}
+
+.filters__button {
+  padding: 3px;
+  border: 1px solid;
+  border-radius: 6px;
 }
 
 .filters__consultamultiple {
   background-color: white;
   border-radius: 5px;
   padding: 8px;
-  margin: 5px 8px;
-  width: fit-content;
+  margin: 5px 0;
+  width: 49%;
+}
+
+/* el margin-top no funciona y no sé porque */
+.filters__consultamultiple span {
+  margin-top: 4px;
 }
 
 .consultamultiple h1 {
@@ -123,9 +179,9 @@ a {
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 0.5rem;
 }
 
 .card {
@@ -134,7 +190,7 @@ a {
   width: 400px;
   height: 370px;
   padding: 16px;
-  margin: 20px;
+  margin: 15px 0;
 }
 
 .card__title {
@@ -148,6 +204,11 @@ a {
   max-height: 200px;
 }
 
+.card__ul__text {
+  text-align: justify;
+  padding-right: 8px;
+}
+
 .card__ul li {
   list-style-type: none;
 }
@@ -157,33 +218,53 @@ a {
 .alojamientox {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin: 4px 3rem;
+}
 
-  margin: 6px;
+.alojamientox__main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 6px 0;
+}
+
+.alojamientox__container {
+  width: 60%;
+  height: fit-content;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
 }
 
 .alojamientox__title {
   font-weight: 600;
-  font-size: 17px;
+  font-size: 18px;
   margin: 0 0 2px 0;
-}
-
-.alojamientox__img__container {
-  width: 50%;
 }
 
 .alojamientox__img {
   width: 100%;
 }
 
+.alojamientox__aside {
+  width: 39%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .alojamientox__info {
+  display: flex; 
+  flex-direction: column;
   background-color: white;
   border-radius: 5px;
   padding: 10px;
-  margin: 5px;
-  width: fit-content;
+  margin: 5px 0;
+  height: fit-content;
 }
 
 .alojamientox__info ul {
@@ -191,10 +272,35 @@ a {
 }
 
 .alojamientox__descripcion {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background-color: white;
+  text-align: justify;
   border-radius: 5px;
   padding: 10px;
-  margin: 5px;
+  margin: 5px 0;
+  height: fit-content;
+}
+
+.alojamientox__contacto {
+  margin: 1rem 0;
+}
+
+.alojamientox__servicios ul {
+  display: inline-block;
+}
+
+.alojamientox__contacto i {
+  color: black;
+  font-size: 32px;
+}
+
+.alojamientox__contacto ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .alojamientox__form {
@@ -202,6 +308,26 @@ a {
   border-radius: 5px;
   padding: 5px;
   margin: 5px;
+}
+
+.alojamientox__form__label__input {
+  margin: 4px;
+}
+
+.alojamientox__form__input {
+  border: 1px solid;
+  border-radius: 2px;
+}
+
+.alojamientox__form__textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(170, 169, 169);
+  border-radius: 4px;
+  resize: none;
 }
 
 .alojamientox__youtube {
@@ -215,13 +341,12 @@ a {
   margin: 5px;
 }
 
-
 /* consultamultiple.html */
 .consultamultiple {
   background-color: white;
   border-radius: 5px;
   padding: 5px;
-  margin: 5px;
+  margin: 15px 0;
 }
 
 #consultamultiple__img {
@@ -240,16 +365,31 @@ a {
 }
 
 /* faq.html */
+
+.faq__flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
 .faq {
   background-color: white;
   border-radius: 5px;
   padding: 5px;
-  margin: 7px 5px;
+  margin: 7px 7px;
 }
 
 .faq__pregunta {
   font-weight: 600;
   font-size: 17px;
+}
+
+.faq__respuesta {
+  padding: 5px;
+  text-align: justify;
 }
 
 /* contacto.html */
@@ -285,12 +425,43 @@ a {
   font-weight: 600;
 }
 
-.contacto__pregunta2 {
-  font-weight: 600;
+.contacto__respuesta {
+  text-align: justify;
+  padding: 2px 5px 2px 5px;
 }
+
+.contacto__form__label__input {
+  margin: 4px;
+}
+
 .contacto__form input {
-  margin: 4px 2px;
+  border: 1px solid;
+  border-radius: 2px;
 }
 .contacto__form textarea {
-  margin: 4px;
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(170, 169, 169);
+  border-radius: 4px;
+  resize: none;
+}
+
+.contacto__form__button {
+  padding: 3px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+/* tablet */
+@media screen and (max-width:1024) {
+  
+}
+
+
+/* mobile */
+@media screen and (max-width:600) {
+  
 }
