@@ -11,14 +11,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/6d523a2af5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header class="header">
-    <!-- Logo momentaneo -->
-    <a href="../index.html"><img class="header__logo" src="../img/logo.png" alt="" /></a>
+    <a href="../index.html">
+      <p class="header__frase">Alojamientos Argentina</p>
+    </a>
+    <i class="header__bars fa-solid fa-bars"></i>
     <nav class="nav">
       <ul class="nav__lista">
         <li><a href="../index.html">Inicio</a></li>
@@ -130,74 +135,69 @@
         </div>
       </div>
 
-      <!-- Video del alojamiento en el caso de que tenga uno -->
-      <!-- <div class="alojamientox__youtube">
-        <iframe width="1360" height="480" src="https://www.youtube.com/embed/GfX1W3l9D2s" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div> -->
+      <div class="form__gmaps-container">
+        <!-- En el caso de que el cliente quiera consultar a un alojamiento en particular lo podrá hacer desde aquí -->
+        <div class="alojamientox__form">
+          <h1 class="titulo-pregunta">¿Querés realizar tu consulta?</h1>
+          <form action="">
+            <div class="alojamientox__form__label__input
+          ">
+              <label for="flname">Nombre y Apellido completo</label>
+              <input class="alojamientox__form__input" type="text" id="flname" name="flname" size="40" required />
+            </div>
+            <div class="alojamientox__form__label__input
+          ">
+              <label for="email">Correo Electrónico</label>
+              <input class="alojamientox__form__input" type="email" id="email" name="email" size="35" required />
+            </div>
+            <div class="alojamientox__form__label__input
+          ">
+              <label for="entrada">Fecha de entrada</label>
+              <input class="alojamientox__form__input" type="date" name="entrada" id="entrada" required />
+            </div>
+            <div class="alojamientox__form__label__input
+          ">
+              <label for="salida">Fecha de salida</label>
+              <input class="alojamientox__form__input" type="date" name="salida" id="salida" required />
+            </div>
+            <div class="alojamientox__form__label__input
+          ">
+              <label for="mayores">Mayores</label>
+              <input class="alojamientox__form__input" type="number" name="mayores" id="mayores" required />
+            </div>
+            <div class="alojamientox__form__label__input
+          ">
+              <label for="menores">Menores</label>
+              <input class="alojamientox__form__input" type="number" name="menores" id="menores" required value="0" />
+            </div>
+            <div class="alojamientox__form__label__input
+          ">
+              <label for="mensaje">Su consulta:</label><br />
+              <textarea class="alojamientox__form__textarea" name="message" rows="10" cols="70"
+                placeholder="Aquí podes consultar por algún servicio en específico que estés buscando,si acepta mascotas, etc..."></textarea>
+            </div>
+            <button>Enviar</button>
+            <button type="reset">Limpiar</button>
+          </form>
+        </div>
 
-      <!-- En el caso de que el cliente quiera consultar a un alojamiento en particular lo podrá hacer desde aquí -->
-      <div class="alojamientox__form">
-        <h1 class="titulo-pregunta">¿Querés realizar tu consulta?</h1>
-        <form action="">
-          <div class="alojamientox__form__label__input
-          ">
-            <label for="flname">Nombre y Apellido completo</label>
-            <input class="alojamientox__form__input" type="text" id="flname" name="flname" size="40" required />
-          </div>
-          <div class="alojamientox__form__label__input
-          ">
-            <label for="email">Correo Electrónico</label>
-            <input class="alojamientox__form__input" type="email" id="email" name="email" size="35" required />
-          </div>
-          <div class="alojamientox__form__label__input
-          ">
-            <label for="entrada">Fecha de entrada</label>
-            <input class="alojamientox__form__input" type="date" name="entrada" id="entrada" required />
-          </div>
-          <div class="alojamientox__form__label__input
-          ">
-            <label for="salida">Fecha de salida</label>
-            <input class="alojamientox__form__input" type="date" name="salida" id="salida" required />
-          </div>
-          <div class="alojamientox__form__label__input
-          ">
-            <label for="mayores">Mayores</label>
-            <input class="alojamientox__form__input" type="number" name="mayores" id="mayores" required />
-          </div>
-          <div class="alojamientox__form__label__input
-          ">
-            <label for="menores">Menores</label>
-            <input class="alojamientox__form__input" type="number" name="menores" id="menores" required value="0" />
-          </div>
-          <div class="alojamientox__form__label__input
-          ">
-            <label for="mensaje">Su consulta:</label><br />
-            <textarea class="alojamientox__form__textarea" name="message" rows="10" cols="70"
-              placeholder="Aquí podes consultar por algún servicio en específico que estés buscando,si acepta mascotas, etc..."></textarea>
-          </div>
-          <button>Enviar</button>
-          <button type="reset">Limpiar</button>
-        </form>
+        <!-- Ubicación del alojamiento -->
+        <div class="alojamientox__maps">
+          <h1>Ubicación del alojamiento</h1>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3004.4160521487684!2d-71.261508!3d-41.147272!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7cc870618299%3A0x84c50dec9aedad0a!2sBocacay%2070%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1649093775970!5m2!1ses-419!2sar"
+            width="547" height="332" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
-
-      <!-- Ubicación del alojamiento -->
-      <div class="alojamientox__maps">
-        <h1>Ubicación del alojamiento</h1>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3004.4160521487684!2d-71.261508!3d-41.147272!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7cc870618299%3A0x84c50dec9aedad0a!2sBocacay%2070%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1649093775970!5m2!1ses-419!2sar"
-          width="547" height="332" style="border: 0" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <!-- Reemplazar por los logos como en el wireframe -->
     </section>
   </main>
 
   <footer class="footer">
     <p class="footer__p">Derechos reservados - Alojamientos Argentina 2022</p>
-    <a href="../index.html"><img class="footer__logo" src="../img/logo.png" alt="" /></a>
+    <a href="../index.html">
+      <p class="footer__frase">Alojamientos Argentina</p>
+    </a>
   </footer>
 </body>
 
