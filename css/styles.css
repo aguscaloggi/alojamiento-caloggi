@@ -4,12 +4,20 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font-color: rgba(245, 245, 245, 0.87);
+  --bg-color: #121212;
+  --bt-color: rgba(55, 139, 252, 0.2);
+  --box-shadow: 6px 6px 12px #070707,
+    -6px -6px 12px #1d1d1d;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #333;
-  background-color: #121212;
+  background-color: var(--bg-color);
 }
 
 /* width */
@@ -45,7 +53,7 @@ body {
 .header__frase {
   display: flex;
   font-family: 'Square Peg', cursive;
-  color: white;
+  color: var(--font-color);
   font-size: 32px;
   margin-left: 0.5rem;
   padding-bottom: 6px;
@@ -60,7 +68,7 @@ body {
 }
 
 li a {
-  color: rgba(245, 245, 245, 0.87);
+  color: var(--font-color);
 }
 
 
@@ -79,20 +87,19 @@ li a {
 }
 
 .hero__texto {
-  background-color: #121212;
-  color: rgba(245, 245, 245, 0.87);
+  background-color: var(--bg-color);
+  color: var(--font-color);
   text-align: justify;
   border-radius: 0.5em;
   padding: 1em;
   margin: 5px 1rem;
-  box-shadow: inset 5px 5px 10px #070707,
-    inset -5px -5px 10px #1d1d1d;
+  box-shadow: var(--box-shadow);
 }
 
 .alojamientos__destacados {
-  color: #E0FF2E;
+  color: rgba(255, 255, 255, 0.8);
   margin-left: 1rem;
-  text-shadow: 0 0 11px rgba(224, 255, 46, .7);
+  text-shadow: 0 0 11px rgba(46, 161, 255, 0.4);
 }
 
 .grid__card {
@@ -106,18 +113,17 @@ li a {
 }
 
 .card__destacada {
-  background-color: #121212;
+  background-color: var(--bg-color);
   color: rgba(245, 245, 245, 0.60);
   border-radius: 10px;
   width: 400px;
   height: 370px;
   padding: 16px;
-  box-shadow: 6px 6px 12px #070707,
-    -6px -6px 12px #1d1d1d;
+  box-shadow: var(--box-shadow);
 }
 
 .card__title {
-  color: rgba(245, 245, 245, 0.87);
+  color: var(--font-color);
 }
 
 .footer {
@@ -128,7 +134,7 @@ li a {
   width: 100%;
   height: fit-content;
   padding-bottom: 6px;
-  background-color: #121212;
+  background-color: var(--bg-color);
   margin-bottom: 0;
 }
 
@@ -140,7 +146,7 @@ li a {
 .footer__frase {
   display: flex;
   font-family: 'Square Peg', cursive;
-  color: white;
+  color: var(--font-color);
   font-size: 32px;
   margin-left: 0.5rem;
 }
@@ -169,13 +175,12 @@ a {
 }
 
 .filters__select {
-  background-color: #121212;
-  color: rgba(245, 245, 245, 0.87);
-  border-radius: 5px;
-
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  padding: 0.5em;
   margin: 5px 0;
-  box-shadow: 6px 6px 12px #070707,
-    -6px -6px 12px #1d1d1d;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
 }
 
 .filters__label__select {
@@ -194,10 +199,10 @@ a {
 }
 
 .filters__button {
-  background-color: rgba(55, 139, 252, 0.2);
+  background-color: var(--bt-color);
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
-  color: rgba(245, 245, 245, 0.87);
+  color: var(--font-color);
   margin: 1em;
   padding: 0.4em 0.8em;
   border: 0px;
@@ -206,13 +211,12 @@ a {
 }
 
 .filters__consultamultiple {
-  background-color: #121212;
+  background-color: var(--bg-color);
   color: rgba(245, 245, 245, 0.87);
   border-radius: 5px;
   padding: 8px;
   margin: 5px 0;
-  box-shadow: 6px 6px 12px #070707,
-    -6px -6px 12px #1d1d1d;
+  box-shadow: var(--box-shadow);
 }
 
 /* el margin-top no funciona y no sé porque */
@@ -244,15 +248,14 @@ a {
 }
 
 .card {
-  background-color: #121212;
+  background-color: var(--bg-color);
   color: rgba(245, 245, 245, 0.60);
   border-radius: 10px;
   width: 400px;
   height: 370px;
   padding: 16px;
   margin: 0.5rem 0;
-  box-shadow: 6px 6px 12px #070707,
-    -6px -6px 12px #1d1d1d;
+  box-shadow: var(--box-shadow);
 }
 
 .card__title {
@@ -294,15 +297,17 @@ a {
 }
 
 .alojamientox__container {
+  background-color: var(--bg-color);
   width: 60%;
   height: fit-content;
-  background-color: white;
   border-radius: 5px;
   padding: 10px;
   margin: 5px;
+  box-shadow: var(--box-shadow);
 }
 
 .alojamientox__title {
+  color: var(--font-color);
   font-weight: 600;
   font-size: 18px;
   margin: 0 0 2px 0;
@@ -322,11 +327,13 @@ a {
 .alojamientox__info {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--bg-color);
+  color: var(--font-color);
   border-radius: 5px;
   padding: 10px;
-  margin: 5px 0;
+  margin: 10px 0;
   height: fit-content;
+  box-shadow: var(--box-shadow);
 }
 
 .alojamientox__info ul {
@@ -337,12 +344,14 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: white;
   text-align: justify;
+  background-color: var(--bg-color);
+  color: var(--font-color);
   border-radius: 5px;
   padding: 10px;
   margin: 5px 0;
   height: fit-content;
+  box-shadow: var(--box-shadow);
 }
 
 .alojamientox__contacto {
@@ -354,7 +363,7 @@ a {
 }
 
 .alojamientox__contacto i {
-  color: black;
+  color: var(--font-color);
   font-size: 32px;
 }
 
@@ -365,6 +374,36 @@ a {
   gap: 1rem;
 }
 
+.fa-solid fa-phone:hover {
+  animation: breathing 5s ease-out infinite normal;
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
 .form__gmaps-container {
   display: flex;
   flex-direction: row;
@@ -373,41 +412,55 @@ a {
 }
 
 .alojamientox__form {
-  background-color: white;
+  background-color: var(--bg-color);
+  color: var(--font-color);
   border-radius: 5px;
   padding: 5px;
   margin: 5px;
+  box-shadow: var(--box-shadow);
 }
 
-.alojamientox__form__label__input {
+.alojamientox__labelinput {
   margin: 4px;
 }
 
-.alojamientox__form__input {
+.alojamientox__input {
   border: 1px solid;
   border-radius: 2px;
 }
 
-.alojamientox__form__textarea {
-  width: 100%;
+.alojamientox__textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   height: 150px;
   padding: 12px 20px;
   margin: 4px 0;
   box-sizing: border-box;
+  background-color: var(--bg-color);
   border: 2px solid rgb(170, 169, 169);
   border-radius: 4px;
   resize: none;
 }
 
-.alojamientox__youtube {
-  width: 80%;
+.alojamientox__button {
+  background-color: var(--bt-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: var(--font-color);
+  margin: 0.1em;
+  padding: 0.4em 0.8em;
+  border: 0px;
+  border-radius: 0.5em;
+  cursor: pointer;
 }
 
 .alojamientox__maps {
-  background-color: white;
+  background-color: var(--bg-color);
+  color: var(--font-color);
   border-radius: 5px;
   padding: 5px;
   margin: 5px;
+  box-shadow: var(--box-shadow);
 }
 
 /* consultamultiple.html */
@@ -449,12 +502,11 @@ a {
   border-radius: 5px;
   padding: 1em;
   margin: 0.5rem 1rem;
-  box-shadow: inset 5px 5px 10px #070707,
-    inset -5px -5px 10px #1d1d1d;
+  box-shadow: var(--box-shadow);
 }
 
 .faq__pregunta {
-  color: rgba(245, 245, 245, 0.87);
+  color: var(--font-color);
   font-weight: 600;
   font-size: 17px;
 }
@@ -476,24 +528,22 @@ a {
 }
 
 .contacto__preguntas {
-  background-color: #121212;
+  background-color: var(--bg-color);
   color: rgba(245, 245, 245, 0.87);
   padding: 1em;
   border-radius: 5px;
   padding: 1em;
-  margin: 5px;
-  box-shadow: inset 5px 5px 10px #070707,
-    inset -5px -5px 10px #1d1d1d;
+  margin: 2rem;
+  box-shadow: var(--box-shadow);
 }
 
 .contacto__form {
-  background-color: #121212;
-  color: rgba(245, 245, 245, 0.87);
+  background-color: var(--bg-color);
+  color: var(--font-color);
   border-radius: 5px;
   padding: 1em;
   margin: 5px;
-  box-shadow: inset 5px 5px 10px #070707,
-    inset -5px -5px 10px #1d1d1d;
+  box-shadow: var(--box-shadow);
 }
 
 .contacto__titulo {
@@ -522,6 +572,7 @@ a {
 }
 
 .contacto__form textarea {
+  background-color: var(--bg-color);
   width: 100%;
   height: 150px;
   padding: 12px 20px;
@@ -533,9 +584,15 @@ a {
 }
 
 .contacto__button {
-  padding: 3px;
-  border: 1px solid;
-  border-radius: 5px;
+  background-color: var(--bt-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: var(--font-color);
+  margin: 0.1em;
+  padding: 0.4em 0.8em;
+  border: 0px;
+  border-radius: 0.5em;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1600px) {
