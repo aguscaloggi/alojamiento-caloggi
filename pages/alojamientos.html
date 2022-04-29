@@ -1,272 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/favicon.png" />
+    <title>Alojamiento Argentina</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="/img/favicon.png" />
-  <title>Alojamiento Argentina</title>
-  <link rel="stylesheet" href="/css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/6d523a2af5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <script src="https://kit.fontawesome.com/6d523a2af5.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <header class="header">
-    <a href="../index.html">
-      <p class="header__frase">Alojamientos Argentina</p>
-    </a>
-    <i class="header__bars fa-solid fa-bars"></i>
-    <nav class="nav">
-      <ul class="nav__lista">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="/pages/alojamientos.html">Alojamientos</a></li>
-        <li><a href="/pages/faq.html">Preguntas Frecuentes</a></li>
-        <li><a href="/pages/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="filters">
-    <div class="filters__select">
-      <form class="filters__form" action="">
-        <h1 class="titulo__pregunta">¿A donde pensas ir?</h1>
-        <section class="filters__label__select">
-          <label for="provincia">Provincia</label>
-          <select class="filters__provincia" name="provincia" id="provincia">
-            <option value="Buenos Aires">Buenos Aires</option>
-            <option value="Cordoba">Córdoba</option>
-            <option value="Neuquen">Neuquen</option>
-          </select>
-          <!-- Lo que ocurre es que no diferencia las option segun la provincia seleccionada, por lo tanto solo puse localidades dentro de la provincia de Buenos Aires -->
-          <label for="ciudad">Ciudad</label>
-          <select class="filters__ciudad" name="ciudad" id="ciudad">
-            <option value="bahia-blanca">Bahía Blanca</option>
-            <option value="tandil">Tandil</option>
-          </select>
-          <button class="filters__button">Aplicar</button>
-        </section>
-      </form>
+  <body>
+    <header class="header">
+      <a href="../index.html">
+        <p class="header__frase">Alojamientos Argentina</p>
+      </a>
+      <i class="header__bars fa-solid fa-bars"></i>
+      <nav class="nav">
+        <ul class="nav__lista">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="/pages/alojamientos.html">Alojamientos</a></li>
+          <li><a href="/pages/faq.html">Preguntas Frecuentes</a></li>
+          <li><a href="/pages/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="filters">
+      <div class="filters__select">
+        <form class="filters__form" action="">
+          <h1 class="titulo__pregunta">¿A donde pensas ir?</h1>
+          <section class="filters__label__select">
+            <label for="provincia">Provincia</label>
+            <select class="filters__provincia" name="provincia" id="provincia">
+              <option value="Buenos Aires">Buenos Aires</option>
+              <option value="Cordoba">Córdoba</option>
+              <option value="Neuquen">Neuquen</option>
+            </select>
+            <!-- Lo que ocurre es que no diferencia las option segun la provincia seleccionada, por lo tanto solo puse localidades dentro de la provincia de Buenos Aires -->
+            <label for="ciudad">Ciudad</label>
+            <select class="filters__ciudad" name="ciudad" id="ciudad">
+              <option value="bahia-blanca">Bahía Blanca</option>
+              <option value="tandil">Tandil</option>
+            </select>
+            <button class="filters__button">Aplicar</button>
+          </section>
+        </form>
+      </div>
+      <!-- La consulta multiple realizaría las consultas en todos los alojamientos de la ciudad seleccionada anteriormente  -->
+      <div class="filters__consultamultiple">
+        <h1 class="titulo__pregunta">¿Querés ahorrar tiempo?</h1>
+        <span
+          >Utilizá el boton de consulta múltiple y ahorrate decenas de
+          formularios</span
+        >
+        <a href="consultamultiple.html"
+          ><button class="filters__button">Buscar</button></a
+        >
+      </div>
     </div>
-    <!-- La consulta multiple realizaría las consultas en todos los alojamientos de la ciudad seleccionada anteriormente  -->
-    <div class="filters__consultamultiple">
-      <h1 class="titulo__pregunta">¿Querés ahorrar tiempo?</h1>
-      <span>Utilizá el boton de consulta múltiple y ahorrate decenas de
-        formularios</span>
-      <a class="consultamultiple__button" href="consultamultiple.html"><button
-          class="filters__button">Buscar</button></a>
-    </div>
-  </div>
-  <main>
-    <div class="grid__alojamientos">
-      <div class="card">
-        <!-- Hacer click en cada alojamiento te llevaría a la publicación específica del mismo, por eso por el momento solo el alojamiento1 tiene el href-->
-        <a href="alojamientox.html">
-          <h1 class="card__title">Nombre del alojamiento</h1>
-        </a>
-        <a href="alojamientox.html"><img class="card__img" src="../img/alojamiento1.jpg" alt="" width="50%" /></a>
-        <div class="card__description">
-          <ul class="card__ul">
-            <li class="card__ul__text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Quaerat sed officiis, libero minima accusamus repellendus?
-            </li>
-            <li>Nro. de habitaciones</li>
-            <li>Dirección</li>
-            <li>Teléfono</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <h1 class="card__title">Nombre del alojamiento</h1>
-        <img class="card__img" src="../img/alojamiento2.jpg" alt="" width="50%" />
-        <div class="card__description">
-          <ul class="card__ul">
-            <li class="card__ul__text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Quaerat sed officiis, libero minima accusamus repellendus?
-            </li>
-            <li>Nro. de habitaciones</li>
-            <li>Dirección</li>
-            <li>Teléfono</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <h1 class="card__title">Nombre del alojamiento</h1>
-        <img class="card__img" src="../img/alojamiento3.jpg" alt="" width="50%" />
-        <div class="card__description">
-          <ul class="card__ul">
-            <li class="card__ul__text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Quaerat sed officiis, libero minima accusamus repellendus?
-            </li>
-            <li>Nro. de habitaciones</li>
-            <li>Dirección</li>
-            <li>Teléfono</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card">
-        <h1 class="card__title">Nombre del alojamiento</h1>
-        <img class="card__img" src="../img/alojamiento1.jpg" alt="" width="50%" />
-        <div class="card__description">
-          <ul class="card__ul">
-            <li class="card__ul__text">
-              <p class="card__ul__text">
+    <main>
+      <div class="grid__alojamientos">
+        <div class="card">
+          <!-- Hacer click en cada alojamiento te llevaría a la publicación específica del mismo, por eso por el momento solo el alojamiento1 tiene el href-->
+          <a href="alojamientox.html">
+            <h1 class="card__title">Nombre del alojamiento</h1>
+          </a>
+          <a href="alojamientox.html"
+            ><img
+              class="card__img"
+              src="../img/alojamiento1.jpg"
+              alt=""
+              width="50%"
+          /></a>
+          <div class="card__description">
+            <ul class="card__ul">
+              <li class="card__ul__text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Quaerat sed officiis, libero minima accusamus repellendus?
-              </p>
-            </li>
-            <li>Nro. de habitaciones</li>
-            <li>Dirección</li>
-            <li>Teléfono</li>
-          </ul>
+              </li>
+              <li>Nro. de habitaciones</li>
+              <li>Dirección</li>
+              <li>Teléfono</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="card">
-        <h1 class="card__title">Nombre del alojamiento</h1>
-        <img class="card__img" src="../img/alojamiento2.jpg" alt="" width="50%" />
-        <div class="card__description">
-          <ul class="card__ul">
-            <li class="card__ul__text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Quaerat sed officiis, libero minima accusamus repellendus?
-            </li>
-            <li>Nro. de habitaciones</li>
-            <li>Dirección</li>
-            <li>Teléfono</li>
-          </ul>
+        <div class="card">
+          <h1 class="card__title">Nombre del alojamiento</h1>
+          <img
+            class="card__img"
+            src="../img/alojamiento2.jpg"
+            alt=""
+            width="50%"
+          />
+          <div class="card__description">
+            <ul class="card__ul">
+              <li class="card__ul__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat sed officiis, libero minima accusamus repellendus?
+              </li>
+              <li>Nro. de habitaciones</li>
+              <li>Dirección</li>
+              <li>Teléfono</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="card">
-        <h1 class="card__title">Nombre del alojamiento</h1>
-        <img class="card__img" src="../img/alojamiento3.jpg" alt="" width="50%" />
-        <div class="card__description">
-          <ul class="card__ul">
-            <li class="card__ul__text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Quaerat sed officiis, libero minima accusamus repellendus?
-            </li>
-            <li>Nro. de habitaciones</li>
-            <li>Dirección</li>
-            <li>Teléfono</li>
-          </ul>
+        <div class="card">
+          <h1 class="card__title">Nombre del alojamiento</h1>
+          <img
+            class="card__img"
+            src="../img/alojamiento3.jpg"
+            alt=""
+            width="50%"
+          />
+          <div class="card__description">
+            <ul class="card__ul">
+              <li class="card__ul__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat sed officiis, libero minima accusamus repellendus?
+              </li>
+              <li>Nro. de habitaciones</li>
+              <li>Dirección</li>
+              <li>Teléfono</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <h1 class="card__title">Nombre del alojamiento</h1>
-        <img class="card__img" src="../img/alojamiento1.jpg" alt="" width="50%" />
-        <div class="card__description">
-          <ul class="card__ul">
-            <li class="card__ul__text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Quaerat sed officiis, libero minima accusamus repellendus?
-            </li>
-            <li>Nro. de habitaciones</li>
-            <li>Dirección</li>
-            <li>Teléfono</li>
-          </ul>
+        <div class="card">
+          <h1 class="card__title">Nombre del alojamiento</h1>
+          <img
+            class="card__img"
+            src="../img/alojamiento1.jpg"
+            alt=""
+            width="50%"
+          />
+          <div class="card__description">
+            <ul class="card__ul">
+              <li class="card__ul__text">
+                <p class="card__ul__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quaerat sed officiis, libero minima accusamus repellendus?
+                </p>
+              </li>
+              <li>Nro. de habitaciones</li>
+              <li>Dirección</li>
+              <li>Teléfono</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="card">
-        <h1 class="card__title">Nombre del alojamiento</h1>
-        <img class="card__img" src="../img/alojamiento2.jpg" alt="" width="50%" />
-        <div class="card__description">
-          <ul class="card__ul">
-            <li class="card__ul__text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Quaerat sed officiis, libero minima accusamus repellendus?
-            </li>
-            <li>Nro. de habitaciones</li>
-            <li>Dirección</li>
-            <li>Teléfono</li>
-          </ul>
+        <div class="card">
+          <h1 class="card__title">Nombre del alojamiento</h1>
+          <img
+            class="card__img"
+            src="../img/alojamiento2.jpg"
+            alt=""
+            width="50%"
+          />
+          <div class="card__description">
+            <ul class="card__ul">
+              <li class="card__ul__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat sed officiis, libero minima accusamus repellendus?
+              </li>
+              <li>Nro. de habitaciones</li>
+              <li>Dirección</li>
+              <li>Teléfono</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <h1 class="card__title">Nombre del alojamiento</h1>
+          <img
+            class="card__img"
+            src="../img/alojamiento3.jpg"
+            alt=""
+            width="50%"
+          />
+          <div class="card__description">
+            <ul class="card__ul">
+              <li class="card__ul__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat sed officiis, libero minima accusamus repellendus?
+              </li>
+              <li>Nro. de habitaciones</li>
+              <li>Dirección</li>
+              <li>Teléfono</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <h1 class="card__title">Nombre del alojamiento</h1>
+          <img
+            class="card__img"
+            src="../img/alojamiento1.jpg"
+            alt=""
+            width="50%"
+          />
+          <div class="card__description">
+            <ul class="card__ul">
+              <li class="card__ul__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat sed officiis, libero minima accusamus repellendus?
+              </li>
+              <li>Nro. de habitaciones</li>
+              <li>Dirección</li>
+              <li>Teléfono</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <h1 class="card__title">Nombre del alojamiento</h1>
+          <img
+            class="card__img"
+            src="../img/alojamiento2.jpg"
+            alt=""
+            width="50%"
+          />
+          <div class="card__description">
+            <ul class="card__ul">
+              <li class="card__ul__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat sed officiis, libero minima accusamus repellendus?
+              </li>
+              <li>Nro. de habitaciones</li>
+              <li>Dirección</li>
+              <li>Teléfono</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <h1 class="card__title">Nombre del alojamiento</h1>
+          <img
+            class="card__img"
+            src="../img/alojamiento2.jpg"
+            alt=""
+            width="50%"
+          />
+          <div class="card__description">
+            <ul class="card__ul">
+              <li class="card__ul__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat sed officiis, libero minima accusamus repellendus?
+              </li>
+              <li>Nro. de habitaciones</li>
+              <li>Dirección</li>
+              <li>Teléfono</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <h1 class="card__title">Nombre del alojamiento</h1>
+          <img
+            class="card__img"
+            src="../img/alojamiento3.jpg"
+            alt=""
+            width="50%"
+          />
+          <div class="card__description">
+            <ul class="card__ul">
+              <li class="card__ul__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat sed officiis, libero minima accusamus repellendus?
+              </li>
+              <li>Nro. de habitaciones</li>
+              <li>Dirección</li>
+              <li>Teléfono</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <h1 class="card__title">Nombre del alojamiento</h1>
+          <img
+            class="card__img"
+            src="../img/alojamiento1.jpg"
+            alt=""
+            width="50%"
+          />
+          <div class="card__description">
+            <ul class="card__ul">
+              <li class="card__ul__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat sed officiis, libero minima accusamus repellendus?
+              </li>
+              <li>Nro. de habitaciones</li>
+              <li>Dirección</li>
+              <li>Teléfono</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <h1 class="card__title">Nombre del alojamiento</h1>
+          <img
+            class="card__img"
+            src="../img/alojamiento2.jpg"
+            alt=""
+            width="50%"
+          />
+          <div class="card__description">
+            <ul class="card__ul">
+              <li class="card__ul__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat sed officiis, libero minima accusamus repellendus?
+              </li>
+              <li>Nro. de habitaciones</li>
+              <li>Dirección</li>
+              <li>Teléfono</li>
+            </ul>
+          </div>
         </div>
       </div>
+    </main>
 
-      <div class="card">
-        <h1 class="card__title">Nombre del alojamiento</h1>
-        <img class="card__img" src="../img/alojamiento2.jpg" alt="" width="50%" />
-        <div class="card__description">
-          <ul class="card__ul">
-            <li class="card__ul__text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Quaerat sed officiis, libero minima accusamus repellendus?
-            </li>
-            <li>Nro. de habitaciones</li>
-            <li>Dirección</li>
-            <li>Teléfono</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <h1 class="card__title">Nombre del alojamiento</h1>
-        <img class="card__img" src="../img/alojamiento3.jpg" alt="" width="50%" />
-        <div class="card__description">
-          <ul class="card__ul">
-            <li class="card__ul__text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Quaerat sed officiis, libero minima accusamus repellendus?
-            </li>
-            <li>Nro. de habitaciones</li>
-            <li>Dirección</li>
-            <li>Teléfono</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card">
-        <h1 class="card__title">Nombre del alojamiento</h1>
-        <img class="card__img" src="../img/alojamiento1.jpg" alt="" width="50%" />
-        <div class="card__description">
-          <ul class="card__ul">
-            <li class="card__ul__text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Quaerat sed officiis, libero minima accusamus repellendus?
-            </li>
-            <li>Nro. de habitaciones</li>
-            <li>Dirección</li>
-            <li>Teléfono</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <h1 class="card__title">Nombre del alojamiento</h1>
-        <img class="card__img" src="../img/alojamiento2.jpg" alt="" width="50%" />
-        <div class="card__description">
-          <ul class="card__ul">
-            <li class="card__ul__text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Quaerat sed officiis, libero minima accusamus repellendus?
-            </li>
-            <li>Nro. de habitaciones</li>
-            <li>Dirección</li>
-            <li>Teléfono</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <p class="footer__p">Derechos reservados - Alojamientos Argentina 2022</p>
-    <a href="../index.html">
-      <p class="footer__frase">Alojamientos Argentina</p>
-    </a>
-  </footer>
-</body>
-
+    <footer class="footer">
+      <p class="footer__p">Derechos reservados - Alojamientos Argentina 2022</p>
+      <a href="../index.html">
+        <p class="footer__frase">Alojamientos Argentina</p>
+      </a>
+    </footer>
+  </body>
 </html>
