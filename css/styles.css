@@ -138,6 +138,11 @@ li a:hover {
   transition: 500ms;
 }
 
+.card__destacada:hover img {
+  transform: scale(1.03);
+  transition: 500ms;
+}
+
 .card__title {
   color: var(--font-color);
 }
@@ -313,6 +318,11 @@ select {
   color: rgba(245, 245, 245, 0.87);
 }
 
+.card:hover .card__img {
+  transform: scale(1.03);
+  transition: 500ms;
+}
+
 .card__title {
   font-size: 18px;
   margin: 0 0 2px 0;
@@ -324,11 +334,6 @@ select {
   max-width: 360px;
   max-height: 200px;
   object-fit: cover;
-}
-
-.card__img:hover {
-  transform: scale(1.03);
-  transition: 500ms;
 }
 
 .card__ul__text {
