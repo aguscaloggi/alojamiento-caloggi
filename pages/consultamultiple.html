@@ -44,14 +44,14 @@
     <!-- La consulta multiple realizaría las consultas en todos los alojamientos de la ciudad seleccionada anteriormente  -->
     <main>
       <!-- Esta imagen estaría recortada y solamente quedaría visible los picos de las montañas -->
+      <img
+        id="consultamultiple__img"
+        src="../img/busquedamultiple1.jpg"
+        alt=""
+        width="100%"
+      />
       <div class="consultamultiple">
         <div class="consultamultiple__content">
-          <img
-            id="consultamultiple__img"
-            src="../img/busquedamultiple1.jpg"
-            alt=""
-            width="100%"
-          />
           <div class="consultamultiple__form">
             <h1 class="titulo-pregunta">¿Querés realizar tu consulta?</h1>
             <form action="">
@@ -128,10 +128,10 @@
                   placeholder="Aquí podes consultar por algún servicio en específico que estés buscando,si acepta mascotas, etc..."
                 ></textarea>
               </div>
-              <button class="consultamultiple__button">Enviar</button>
-              <button class="consultamultiple__button" type="reset">
-                Limpiar
-              </button>
+              <div class="flex__buttons">
+                <button class="stylish__button">Enviar</button>
+                <button class="stylish__button" type="reset">Limpiar</button>
+              </div>
             </form>
           </div>
         </div>
