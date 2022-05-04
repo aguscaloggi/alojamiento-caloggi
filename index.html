@@ -27,21 +27,29 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/indexfaq.css" />
   </head>
 
   <body>
     <header class="header">
-      <a href="../index.html">
-        <p class="header__frase">Alojamientos Argentina</p>
-      </a>
-      <i class="header__bars fa-solid fa-bars"></i>
-      <nav class="nav">
-        <ul class="nav__lista">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./pages/alojamientos.html">Alojamientos</a></li>
-          <li><a href="./pages/faq.html">Preguntas Frecuentes</a></li>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
+      <!-- <i class="header__bars fa-solid fa-bars"></i> -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand m-1" href="../index.html">
+          Alojamientos Argentina
+        </a>
+        <ul class="navbar-nav ms-auto list-group-horizontal">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li>
+            <a class="nav-link" href="./pages/alojamientos.html"
+              >Alojamientos</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="./pages/faq.html">Preguntas Frecuentes</a>
+          </li>
+          <li><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -51,12 +59,15 @@
         <!-- Sobre la imagen me gustaría poner un texto, y que la imagen quede con una especie de blur oscuro -->
         <div>
           <img
-            class="hero__img"
+            class="img-fluid"
             src="img/index.jpg"
             alt="Obelisco de Buenos Aires"
           />
           <!-- Debajo de la imagen algun texto que llame la atención del usuario -->
-          <p class="hero__texto">
+          <p
+            class="badge text-start bg-dark text-wrap"
+            style="margin: 0.5rem; font-size: 16px; font-weight: 400"
+          >
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
             dicta perferendis labore, vero obcaecati eaque quas inventore nihil
             sed a libero, iure voluptatem amet consectetur debitis. Commodi
@@ -72,93 +83,86 @@
           </p>
         </div>
       </section>
-      <div class="grid__card">
-        <div class="card__destacada">
-          <h1 class="card__title">Nombre del alojamiento</h1>
-          <img
-            class="card__img"
-            src="./img/alojamiento2.jpg"
-            alt=""
-            width="50%"
-          />
-          <div class="card__description">
-            <ul class="card__ul">
-              <li class="card__ul__text-destacada">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quaerat sed officiis, libero minima accusamus repellendus?
-              </li>
-              <li>Nro. de habitaciones</li>
-              <li>Dirección</li>
-              <li>Teléfono</li>
-            </ul>
-          </div>
-        </div>
-        <div class="card__destacada">
-          <h1 class="card__title">Nombre del alojamiento</h1>
-          <img class="card__img" src="../img/alojamiento3.jpg" alt="" />
-          <div class="card__description">
-            <ul class="card__ul">
-              <li class="card__ul__text-destacada">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quaerat sed officiis, libero minima accusamus repellendus?
-              </li>
-              <li>Nro. de habitaciones</li>
-              <li>Dirección</li>
-              <li>Teléfono</li>
-            </ul>
-          </div>
-        </div>
-        <div class="card__destacada">
-          <!-- Hacer click en cada alojamiento te llevaría a la publicación específica del mismo, por eso por el momento solo el alojamiento1 tiene el href-->
-          <h1 class="card__title">Nombre del alojamiento</h1>
-          <img
-            class="card__img"
-            src="./img/alojamiento1.jpg"
-            alt=""
-            width="50%"
-          />
-          <div class="card__description">
-            <ul class="card__ul">
-              <li class="card__ul__text">
-                <p class="card__ul__text-destacada">
+      <div class="container-fluid">
+        <div class="row justify-content-around">
+          <div class="card text-white bg-dark m-2" style="width: 400px">
+            <h1 class="card-title text-white" style="font-size: 22px">
+              Nombre del alojamiento
+            </h1>
+            <img class="img-fluid" src="./img/alojamiento2.jpg" alt="" />
+            <div class="card__description text-white">
+              <div class="card-body">
+                <p class="card-text m-0">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Quaerat sed officiis, libero minima accusamus repellendus?
                 </p>
-              </li>
-              <li>Nro. de habitaciones</li>
-              <li>Dirección</li>
-              <li>Teléfono</li>
-            </ul>
+                <p class="card-text m-0">Nro. de habitaciones</p>
+                <p class="card-text m-0">Dirección</p>
+                <p class="card-text m-0">Teléfono</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card__destacada">
-          <h1 class="card__title">Nombre del alojamiento</h1>
-          <img
-            class="card__img"
-            src="./img/alojamiento2.jpg"
-            alt=""
-            width="50%"
-          />
-          <div class="card__description">
-            <ul class="card__ul">
-              <li class="card__ul__text-destacada">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quaerat sed officiis, libero minima accusamus repellendus?
-              </li>
-              <li>Nro. de habitaciones</li>
-              <li>Dirección</li>
-              <li>Teléfono</li>
-            </ul>
+          <div class="card text-white bg-dark m-2" style="width: 400px">
+            <h1 class="card-title text-white" style="font-size: 22px">
+              Nombre del alojamiento
+            </h1>
+            <img class="img-fluid" src="../img/alojamiento3.jpg" alt="" />
+            <div class="card__description text-white">
+              <div class="card-body">
+                <p class="card-text m-0">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quaerat sed officiis, libero minima accusamus repellendus?
+                </p>
+                <p class="card-text m-0">Nro. de habitaciones</p>
+                <p class="card-text m-0">Dirección</p>
+                <p class="card-text m-0">Teléfono</p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-white bg-dark m-2" style="width: 400px">
+            <h1 class="card-title text-white" style="font-size: 22px">
+              Nombre del alojamiento
+            </h1>
+            <img class="img-fluid" src="./img/alojamiento1.jpg" alt="" />
+            <div class="card__description text-white">
+              <div class="card-body">
+                <p class="card-text m-0">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quaerat sed officiis, libero minima accusamus repellendus?
+                </p>
+                <p class="card-text m-0">Nro. de habitaciones</p>
+                <p class="card-text m-0">Dirección</p>
+                <p class="card-text m-0">Teléfono</p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-white bg-dark m-2" style="width: 400px">
+            <h1 class="card-title text-white" style="font-size: 22px">
+              Nombre del alojamiento
+            </h1>
+            <img class="img-fluid" src="./img/alojamiento2.jpg" alt="" />
+            <div class="card__description text-white">
+              <div class="card-body">
+                <p class="card-text m-0">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quaerat sed officiis, libero minima accusamus repellendus?
+                </p>
+                <p class="card-text m-0">Nro. de habitaciones</p>
+                <p class="card-text m-0">Dirección</p>
+                <p class="card-text m-0">Teléfono</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </main>
 
-    <footer class="footer">
-      <p class="footer__p">Derechos reservados - Alojamientos Argentina 2022</p>
-      <a href="../index.html">
-        <p class="footer__frase">Alojamientos Argentina</p>
-      </a>
+    <footer class="bg-dark" style="padding: 0.5rem">
+      <div class="text-center">
+        <span class="text-white" style="font-size: 20px">
+          Derechos reservados - Alojamientos Argentina 2022
+        </span>
+      </div>
     </footer>
   </body>
 </html>
