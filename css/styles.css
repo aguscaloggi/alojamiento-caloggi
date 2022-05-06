@@ -673,6 +673,7 @@ select {
   color: var(--font-color);
   border-radius: 5px;
   padding: 1em;
+  margin-top: 2vh;
   box-shadow: var(--box-shadow);
   max-width: 900px;
   width: 80vw;
@@ -701,6 +702,22 @@ select {
   margin: 0.4em;
 }
 
+.contacto__labelinput input {
+  background-color: var(--bg-color);
+  border: 0;
+  border-bottom: 1.5px solid var(--font-color);
+  outline: 0;
+  width: 40%;
+  font-size: 16px;
+  color: var(--font-color);
+  padding: 4px;
+  margin-left: 0.4em;
+}
+
+.contacto__labelinput input:focus {
+  border-bottom: 1.5px solid rgb(255, 255, 255);
+}
+
 .alojamientox__input {
   background-color: var(--bg-color);
   border: 0;
@@ -717,7 +734,25 @@ select {
   border-bottom: 1.5px solid rgb(255, 255, 255);
 }
 
-.contacto__textarea {
+.contacto__textarea label {
+  margin: 0.4em;
+}
+
+.contacto__textarea textarea {
+  background-color: var(--bg-color);
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  margin: 12px 0;
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 2px solid var(--font-color);
+  border-top: 0;
+  resize: none;
+  outline: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  color: var(--font-color);
   margin: 0.4em;
 }
 
