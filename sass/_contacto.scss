@@ -1,0 +1,136 @@
+$fontcolor: rgba(245, 245, 245, 0.87);
+$bgcolor: #121212;
+$btcolor: rgba(55, 139, 252, 0.2);
+$boxshadow: 6px 6px 12px #070707,
+  -6px -6px 12px #1d1d1d;
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: $bgcolor;
+    min-height: 100vh;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    &__preguntas {
+        background-color: $bgcolor;
+        color: $fontcolor;
+        padding: 1em;
+        border-radius: 5px;
+        padding: 1em;
+        margin: 1em 0 1em 0;
+        box-shadow: $boxshadow;
+        width: 90vw;
+        .contacto__titulo {
+            font-weight: 600;
+            font-size: 22px;
+        }
+        .contacto__pregunta {
+            font-weight: 600;
+            margin-top: 0.2em;
+        }
+        .contacto__respuesta {
+            color: rgba(245, 245, 245, 0.60);
+            text-align: justify;
+            padding: 0.2em 1em;
+        }
+    }
+    &__form {
+        background-color: $bgcolor;
+        color: $fontcolor;
+        border-radius: 5px;
+        padding: 1em;
+        margin-top: 2vh;
+        box-shadow: $boxshadow;
+        max-width: 900px;
+        width: 80vw;
+        align-self: center;
+        .contacto__labelinput {
+            display: flex;
+            flex-direction: row;
+            margin: 0.4em;
+            input {
+                background-color: $bgcolor;
+                border: 0;
+                border-bottom: 1.5px solid $fontcolor;
+                outline: 0;
+                width: 40%;
+                font-size: 16px;
+                color: $fontcolor;
+                padding: 4px;
+                margin-left: 0.4em;
+
+                &:focus {
+                    border-bottom: 2px solid rgb(255, 255, 255);
+                }
+            }
+        }
+        &__textarea {
+            background-color: $bgcolor;
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            margin: 12px 0;
+            box-sizing: border-box;
+            border: 0;
+            border-bottom: 2px solid $fontcolor;
+            border-top: 0;
+            resize: none;
+            outline: 0;
+            font-family: "Montserrat", sans-serif;
+            font-size: 17px;
+            color: $fontcolor;
+            margin: 0.4em;
+        }
+        .textarea {
+            background-color: $bgcolor;
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            margin: 12px 0;
+            box-sizing: border-box;
+            border: 0;
+            border-bottom: 2px solid $fontcolor;
+            border-top: 0;
+            resize: none;
+            outline: 0;
+            font-family: "Montserrat", sans-serif;
+            font-size: 17px;
+            color: $fontcolor;
+            margin: 0.4em;
+            &:focus {
+                border-bottom: 2px solid rgb(255, 255, 255);
+            }
+        }
+        .flex__buttons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+            .stylish__button{
+                background-color: $btcolor;
+            font-family: "Montserrat", sans-serif;
+            font-size: 15px;
+            color: $fontcolor;
+            padding: 0.4em 0.8em;
+            margin: 0.5em;
+            border: 0px;
+            border-radius: 0.5em;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(55, 139, 252, 0.3);
+                color: rgba(245, 245, 245, 1);
+                transition-duration: 200ms;
+            }
+            }
+        }
+    }
+}

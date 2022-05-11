@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  word-wrap: normal;
+  color: #fff;
+}
+
+.header__frase {
+  display: inline-block;
+  font-family: 'Square Peg', cursive;
+  color: rgba(245, 245, 245, 0.87);
+  font-size: 32px;
+  margin-left: 0.5rem;
+  padding-bottom: 6px;
+  white-space: nowrap;
+}
+
+.header__bars {
+  display: none !important;
+}
+
+.header__nav .nav__lista {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+  margin-right: 1rem;
+  color: rgba(245, 245, 245, 0.87);
+}
+
+.header__nav .nav__lista li:hover {
+  color: white;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #121212;
+  min-height: 100vh;
+}
+
+.contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacto__preguntas {
+  background-color: #121212;
+  color: rgba(245, 245, 245, 0.87);
+  padding: 1em;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em 0 1em 0;
+  -webkit-box-shadow: 6px 6px 12px #070707, -6px -6px 12px #1d1d1d;
+          box-shadow: 6px 6px 12px #070707, -6px -6px 12px #1d1d1d;
+  width: 90vw;
+}
+
+.contacto__preguntas .contacto__titulo {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.contacto__preguntas .contacto__pregunta {
+  font-weight: 600;
+  margin-top: 0.2em;
+}
+
+.contacto__preguntas .contacto__respuesta {
+  color: rgba(245, 245, 245, 0.6);
+  text-align: justify;
+  padding: 0.2em 1em;
+}
+
+.contacto__form {
+  background-color: #121212;
+  color: rgba(245, 245, 245, 0.87);
+  border-radius: 5px;
+  padding: 1em;
+  margin-top: 2vh;
+  -webkit-box-shadow: 6px 6px 12px #070707, -6px -6px 12px #1d1d1d;
+          box-shadow: 6px 6px 12px #070707, -6px -6px 12px #1d1d1d;
+  max-width: 900px;
+  width: 80vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.contacto__form .contacto__labelinput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0.4em;
+}
+
+.contacto__form .contacto__labelinput input {
+  background-color: #121212;
+  border: 0;
+  border-bottom: 1.5px solid rgba(245, 245, 245, 0.87);
+  outline: 0;
+  width: 40%;
+  font-size: 16px;
+  color: rgba(245, 245, 245, 0.87);
+  padding: 4px;
+  margin-left: 0.4em;
+}
+
+.contacto__form .contacto__labelinput input:focus {
+  border-bottom: 2px solid white;
+}
+
+.contacto__form__textarea {
+  background-color: #121212;
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  margin: 12px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  border-bottom: 2px solid rgba(245, 245, 245, 0.87);
+  border-top: 0;
+  resize: none;
+  outline: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  color: rgba(245, 245, 245, 0.87);
+  margin: 0.4em;
+}
+
+.contacto__form .textarea {
+  background-color: #121212;
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  margin: 12px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  border-bottom: 2px solid rgba(245, 245, 245, 0.87);
+  border-top: 0;
+  resize: none;
+  outline: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  color: rgba(245, 245, 245, 0.87);
+  margin: 0.4em;
+}
+
+.contacto__form .textarea:focus {
+  border-bottom: 2px solid white;
+}
+
+.contacto__form .flex__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.contacto__form .flex__buttons .stylish__button {
+  background-color: rgba(55, 139, 252, 0.2);
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: rgba(245, 245, 245, 0.87);
+  padding: 0.4em 0.8em;
+  margin: 0.5em;
+  border: 0px;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.contacto__form .flex__buttons .stylish__button:hover {
+  background-color: rgba(55, 139, 252, 0.3);
+  color: whitesmoke;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 6px;
+  background-color: #121212;
+  margin-top: auto;
+}
+
+.footer .footer__p {
+  margin-right: 1rem;
+  color: white;
+}
+
+.footer .footer__frase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Square Peg', cursive;
+  color: rgba(245, 245, 245, 0.87);
+  font-size: 32px;
+  margin-left: 0.5rem;
+}
+/*# sourceMappingURL=prueba.css.map */
