@@ -58,9 +58,11 @@
       <div class="consultamultiple">
         <div class="consultamultiple__content">
           <div class="consultamultiple__form">
-            <h1 class="titulo-pregunta">¿Querés realizar tu consulta?</h1>
+            <h1 class="consultamultiple__titulo">
+              ¿Querés realizar tu consulta?
+            </h1>
             <form action="">
-              <div>
+              <div class="consultamultiple__labelinput">
                 <label for="flname">Nombre y Apellido completo</label>
                 <input
                   class="consultamultiple__input"
@@ -71,7 +73,7 @@
                   autocomplete="off"
                 />
               </div>
-              <div>
+              <div class="consultamultiple__labelinput">
                 <label for="email">Correo Electrónico</label>
                 <input
                   class="consultamultiple__input"
@@ -82,7 +84,7 @@
                   autocomplete="off"
                 />
               </div>
-              <div>
+              <div class="consultamultiple__labelinput">
                 <label for="entrada">Fecha de entrada</label>
                 <input
                   class="consultamultiple__input"
@@ -92,7 +94,7 @@
                   required
                 />
               </div>
-              <div>
+              <div class="consultamultiple__labelinput">
                 <label for="salida">Fecha de salida</label>
                 <input
                   class="consultamultiple__input"
@@ -102,7 +104,7 @@
                   required
                 />
               </div>
-              <div>
+              <div class="consultamultiple__labelinput">
                 <label for="mayores">Mayores</label>
                 <input
                   class="consultamultiple__input"
@@ -113,7 +115,7 @@
                   autocomplete="off"
                 />
               </div>
-              <div>
+              <div class="consultamultiple__labelinput">
                 <label for="menores">Menores</label>
                 <input
                   class="consultamultiple__input"
@@ -125,16 +127,14 @@
                   autocomplete="off"
                 />
               </div>
-              <div>
-                <label for="mensaje">Su consulta</label><br />
-                <textarea
-                  class="consultamultiple__textarea"
-                  name="message"
-                  rows="10"
-                  cols="70"
-                  placeholder="Aquí podes consultar por algún servicio en específico que estés buscando,si acepta mascotas, etc..."
-                ></textarea>
-              </div>
+              <label for="mensaje">Su consulta</label><br />
+              <textarea
+                class="consultamultiple__textarea"
+                name="message"
+                rows="12"
+                cols="70"
+                placeholder="Aquí podes consultar por algún servicio en específico que estés buscando,si acepta mascotas, etc..."
+              ></textarea>
               <div class="flex__buttons">
                 <button class="stylish__button">Enviar</button>
                 <button class="stylish__button" type="reset">Limpiar</button>
