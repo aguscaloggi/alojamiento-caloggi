@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 6px;
+    background-color: $bgcolor;
+    margin-top: auto;
+    &__p {
+        margin-right: 1rem;
+        color: $fontcolorhover;
+    }
+    &__frase {
+        display: flex;
+        font-family: 'Square Peg', cursive;
+        color: $fontcolorhover;
+        font-size: 32px;
+        margin-left: 0.5rem;
+    }
+}

@@ -1,0 +1,68 @@
+.consultamultiple__img {
+    width: 100%;
+    height: auto;
+}
+
+.consultamultiple {
+    display: flex;
+    justify-content: center;
+    &__content {
+        background-color: $bgcolor;
+        color: $fontcolor;
+        border-radius: 5px;
+        padding: 6px;
+        margin: 3vh 0 4vh 0;
+        box-shadow: $boxshadow;
+        width: 80vw;    
+    }
+    &__form {
+        padding: 4px;
+    }
+    &__titulo {
+        font-weight: 600;
+        font-size: 32px; 
+    }
+    &__labelinput {
+        display: flex;
+        flex-direction: row;
+        margin: 4px;    
+        .consultamultiple__input {
+            background-color: $bgcolor;
+            border: 0;
+            border-bottom: 1.5px solid $fontcolor;
+            outline: 0;
+            width: 40%;
+            font-size: 16px;
+            color: $fontcolor;
+            padding: 4px;
+            margin-left: 0.4em; 
+            &:focus{
+                border-bottom: 2px solid $fontcolorhover;
+            }
+        }
+    }
+    &__textarea {
+        background-color: $bgcolor;
+        height: 150px;
+        width: 95%;
+        padding: 12px 20px;
+        margin: 12px 0;
+        box-sizing: border-box;
+        border: 0;
+        border-bottom: 2px solid $fontcolor;
+        resize: none;
+        outline: 0;
+        font-family: "Montserrat", sans-serif;
+        font-size: 17px;
+        color: $fontcolor;
+        &:focus{
+            border-bottom: 2px solid $fontcolorhover;
+        }
+    }
+    .flex__buttons{
+        @extend .flex__buttons;
+        .stylish__button {
+            @extend .button;
+        }
+    }
+}

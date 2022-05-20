@@ -1,0 +1,100 @@
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    &__preguntas {
+        background-color: $bgcolor;
+        color: $fontcolor;
+        padding: 1em;
+        border-radius: 5px;
+        padding: 1em;
+        margin: 1em 0 1em 0;
+        box-shadow: $boxshadow;
+        width: 90vw;
+        .contacto__titulo {
+            font-weight: 600;
+            font-size: 17px;
+        }
+        .contacto__pregunta {
+            font-weight: 600;
+            margin-top: 0.2em;
+        }
+        .contacto__respuesta {
+            color: $fontcolor;
+            text-align: justify;
+            padding: 0.2em 1em;
+        }
+    }
+    &__form {
+        background-color: $bgcolor;
+        color: $fontcolor;
+        border-radius: 5px;
+        padding: 1em;
+        margin: 2vh 0 2vh 0;
+        box-shadow: $boxshadow;
+        max-width: 900px;
+        width: 80vw;
+        align-self: center;
+        .contacto__pregunta {
+            font-weight: 600;
+            margin-top: 0.2em;
+        }
+        .contacto__labelinput {
+            display: flex;
+            flex-direction: row;
+            margin: 0.4em;
+            input {
+                background-color: $bgcolor;
+                border: 0;
+                border-bottom: 1.5px solid $fontcolor;
+                outline: 0;
+                width: 40%;
+                font-size: 16px;
+                color: $fontcolor;
+                padding: 4px;
+                margin-left: 0.4em;
+                &:focus{
+                    border-bottom: 2px solid $fontcolorhover;
+                }
+            }
+        }
+        .contacto__textarea textarea {
+                background-color: $bgcolor;
+                width: 100%;
+                height: 150px;
+                padding: 12px 20px;
+                margin: 12px 0;
+                box-sizing: border-box;
+                border: 0;
+                border-bottom: 2px solid $fontcolor;
+                border-top: 0;
+                resize: none;
+                outline: 0;
+                font-family: "Montserrat", sans-serif;
+                font-size: 17px;
+                color:$fontcolor;
+                margin: 0.4em;
+        }
+        .flex__buttons {
+            @extend .flex__buttons;
+            .stylish__button {
+                background-color: $btcolor;
+                font-family: "Montserrat", sans-serif;
+                font-size: 15px;
+                color: $fontcolor;
+                padding: 0.4em 0.8em;
+                margin: 0.5em;
+                border: 0px;
+                border-radius: 0.5em;
+                cursor: pointer;
+                &:hover {
+                    background-color: rgba(55, 139, 252, 0.3);
+                    color: $fontcolorhover;
+                    transition-duration: 200ms; 
+                }
+            }
+        }
+    }
+}

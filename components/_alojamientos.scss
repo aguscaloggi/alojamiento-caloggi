@@ -1,0 +1,110 @@
+.filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 1rem;
+    gap: 2rem;
+    &__select {
+        display: flex;
+        flex-direction: column;
+        background-color: $bgcolor;
+        color: $fontcolor;
+        padding: 0.5em;
+        margin: 5px 0;
+        border-radius: 5px;
+        box-shadow: $boxshadow;
+    }
+    .titulo__pregunta {
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 4px;
+        color: $fontcolor;
+    }
+    .filters__label__select {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0.5rem;
+        flex-wrap: wrap;
+        color: $fontcolor;
+        .filters__provincia {
+            background-color: $bgcolor;
+            color: $fontcolor;
+            font-size: 16px;
+            outline: 0;
+            border: 0;
+            border-bottom: 1px solid $fontcolor;
+            padding: 2px;
+            margin: 0 6px;
+        }
+        .filters__ciudad {
+            background-color: $bgcolor;
+            color: $fontcolor;
+            font-size: 16px;
+            outline: 0;
+            border: 0;
+            border-bottom: 1px solid $fontcolor;
+            padding: 2px;
+            margin: 0 6px;
+        }
+        .button {
+            @extend .button;
+        }
+    }
+    &__consultamultiple {
+        background-color: $bgcolor;
+        color: rgba(245, 245, 245, 0.87);
+        border-radius: 5px;
+        padding: 8px;
+        margin-top: 5px;
+        box-shadow: $boxshadow;
+        height: fit-content;
+        h1 {
+            font-size: 17px;
+            font-weight: 500;
+        }
+    }
+}
+
+.grid__alojamientos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    row-gap: 15px;
+    margin: 0.5rem 0 1rem 0;
+
+    .card {
+        @extend .card;
+
+        &__title {
+            color: $fontcolorhover;
+            font-size: 18px;
+            margin-bottom: 2px;
+        }
+        &__img {
+            align-self: center;
+            width: 100%;
+            max-width: 360px;
+            max-height: 200px;
+            object-fit: cover;
+        }
+        &__text {
+            text-align: justify;
+            padding: 2px 8px 0 6px;
+        }
+        &__ul li {
+            list-style-type: none;
+            padding: 2px 8px 0 6px;
+        }
+        
+        &:hover {
+            color: rgba(245, 245, 245, 0.87);
+        }
+        &:hover .card__img {
+            transform: scale(1.03);
+            transition: 500ms;
+          }
+    }
+  }

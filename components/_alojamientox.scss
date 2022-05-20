@@ -1,0 +1,149 @@
+.alojamientox{
+    &__main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 1.5rem 0;
+        .alojamientox__container {
+            background-color: $bgcolor;
+            border-radius: 5px;
+            box-shadow: $boxshadow;
+            padding: 10px;
+            height: fit-content;
+            width: fit-content;
+            .alojamientox__title {
+                color: $fontcolorhover;
+                font-weight: 600;
+                font-size: 22px;
+                margin: 0 0 2px 0;    
+            }
+            .alojamientox__img {
+                width: 54vw;
+            }
+        }
+        .alojamientox__aside {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;    
+            .alojamientox__descripcion {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: justify;
+                background-color: $bgcolor;
+                color: $fontcolor;
+                border-radius: 5px;
+                padding: 10px;
+                width: 40vw;
+                height: fit-content;
+                box-shadow: $boxshadow;
+            }
+            .servicios__contacto {
+                margin: 0 0 1rem 0.5rem;
+                .alojamientox__info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    background-color: $bgcolor;
+                    color: $fontcolor;
+                    border-radius: 5px;
+                    padding: 10px;
+                    margin: 10px 0;
+                    height: fit-content;
+                    box-shadow: $boxshadow;
+                    .alojamientox__servicios ul {
+                        display: inline-block;
+                        .ul__container {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: space-around;    
+                        }
+                    } 
+                }
+                .alojamientox__contacto ul {
+                    list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1rem;
+                }
+                .alojamientox__contacto i {
+                    color: $fontcolor;
+                    font-size: 32px;
+                    &:hover{
+                        color: $fontcolorhover;
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+    }
+    .flex__container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 1.5rem 0 1rem 0;
+        .alojamientox__form {
+            background-color: $bgcolor;
+            color: $fontcolor;
+            border-radius: 5px;
+            padding: 8px;
+            margin: 5px;
+            box-shadow: $boxshadow;
+            .alojamientox__labelinput {
+                display: flex;
+                flex-direction: row;
+                margin: 0.4em;
+                input {
+                    background-color: $bgcolor;
+                    color: $fontcolor;
+                    font-size: 16px;
+                    border: 0;
+                    border-bottom: 1.5px solid $fontcolor;
+                    outline: 0;
+                    padding: 4px;
+                }
+            }
+            .alojamientox__textarea {
+                background-color: $bgcolor;
+                height: 150px;
+                padding: 12px 20px;
+                margin: 12px;
+                box-sizing: border-box;
+                border: 0;
+                border-bottom: 2px solid $fontcolorhover;
+                border-top: 0;
+                resize: none;
+                outline: 0;
+                font-family: "Montserrat", sans-serif;
+                font-size: 17px;
+                color: $fontcolor;
+            }
+            .flex__buttons {
+                @extend .flex__buttons;
+                .alojamientox__button {
+                    @extend .button;
+                }
+            }
+        }
+        .alojamientox__maps {
+            background-color: $bgcolor;
+            color: $fontcolor;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 2rem 5px 5px 5px;
+            box-shadow: $boxshadow;
+            .iframe__container {
+                display: flex;
+                align-content: center;
+                iframe {
+                    padding: 0.5rem 0.5rem;
+                    min-width: 30vw;
+                    height: 465px;
+                }
+            }
+        }
+    }
+}
