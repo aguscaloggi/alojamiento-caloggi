@@ -52,14 +52,16 @@
                     margin: 10px 0;
                     height: fit-content;
                     box-shadow: $boxshadow;
-                    .alojamientox__servicios ul {
-                        display: inline-block;
+                    .alojamientox__servicios {
                         .ul__container {
                             display: flex;
                             flex-direction: row;
                             flex-wrap: wrap;
-                            justify-content: space-around;    
+                            justify-content: space-evenly;    
                         }
+                        ul {
+                            display: inline-block;
+                    }
                     } 
                 }
                 .alojamientox__contacto ul {
@@ -138,10 +140,152 @@
             .iframe__container {
                 display: flex;
                 align-content: center;
+                overflow: hidden;
+                position: relative;
                 iframe {
+                    height: 100%;
+                    width: 100%;
                     padding: 0.5rem 0.5rem;
                     min-width: 30vw;
                     height: 465px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1830px) {
+    .alojamientox {
+        &__main {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            .alojamientox__container {
+                align-self: center;
+                margin-bottom: 2rem;
+                .alojamientox__img {
+                    width: calc(100vw - 10vw);
+                }
+        }
+            .alojamientox__aside {
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 2vw;
+            }
+            .alojamientox__contacto {
+                align-self: center;
+                margin-left: 1.5rem;
+                .alojamientox__info {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap
+                }
+            }
+        }
+    }
+ }
+
+@media screen and (max-width:1440px) {
+    .alojamientox {
+        &__main {
+            .alojamientox__aside {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .alojamientox__descripcion {
+                    width: 87vw;
+                }
+                .servicios__contacto {
+                    display: flex;
+                    flex-direction: row;
+                    .alojamientox__info {
+                        width: fit-content;
+                    .alojamientox__servicios {
+                        width: fit-content;
+                        .ul__container {
+                            margin: 0.5rem;
+                        }
+                    }
+                }
+                    .alojamientox__contacto ul {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }  
+            }
+        }
+    }
+}
+@media screen and (max-width:1260px) {
+    .alojamientox {
+        .flex__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .alojamientox__form {
+                width: 60vw;
+                .alojamientox__textarea {
+                    width: 95%;
+                }
+                input {
+                    width: 50%;
+                }
+            }
+            .alojamientox__maps {
+                .iframe__container {
+                    width: 50vw;
+                    height: 50vh;
+                    iframe {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        } 
+    }
+}
+
+@media screen and (max-width:940px) {
+.alojamientox {
+    &__main {
+        .alojamientox__aside {
+            .alojamientox__info{
+                width: 80vw;
+            }
+            
+            .servicios__contacto {
+                flex-direction: column;
+                .alojamientox__contacto ul {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .flex__container {
+        .alojamientox__form {
+            width: 70vw;
+        }
+        .alojamientox__maps {
+            .iframe__container {
+                width: 65vw;
+            }
+        }
+    }
+}
+}
+
+@media screen and (max-width:841px) {
+    .alojamientox {
+        .flex__container {
+            .alojamientox__form {
+                .alojamientox__labelinput {
+                    flex-direction: column;
+                    input {
+                        width: 80%;
+                    }
                 }
             }
         }

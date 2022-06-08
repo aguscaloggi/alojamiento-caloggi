@@ -51,20 +51,29 @@
         <form class="filters__form" action="">
           <h1 class="titulo__pregunta">¿A donde pensas ir?</h1>
           <section class="filters__label__select">
-            <label for="provincia">Provincia</label>
-            <select class="filters__provincia" name="provincia" id="provincia">
-              <option value="" disabled selected hidden>Seleccione..</option>
-              <option value="Buenos Aires">Buenos Aires</option>
-              <option value="Cordoba">Córdoba</option>
-              <option value="Neuquen">Neuquen</option>
-            </select>
+            <div class="wrap">
+              <label for="provincia">Provincia</label>
+              <select
+                class="filters__provincia"
+                name="provincia"
+                id="provincia"
+              >
+                <option value="" disabled selected hidden>Seleccione..</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Cordoba">Córdoba</option>
+                <option value="Neuquen">Neuquen</option>
+              </select>
+            </div>
             <!-- Lo que ocurre es que no diferencia las option segun la provincia seleccionada, por lo tanto solo puse localidades dentro de la provincia de Buenos Aires -->
-            <label for="ciudad">Ciudad</label>
-            <select class="filters__ciudad" name="ciudad" id="ciudad">
-              <option value="" disabled selected hidden>Seleccione..</option>
-              <option value="bahia-blanca">Bahía Blanca</option>
-              <option value="tandil">Tandil</option>
-            </select>
+            <div class="wrap">
+              <label for="ciudad">Ciudad</label>
+              <select class="filters__ciudad" name="ciudad" id="ciudad">
+                <option value="" disabled selected hidden>Seleccione..</option>
+                <option value="bahia-blanca">Bahía Blanca</option>
+                <option value="tandil">Tandil</option>
+              </select>
+            </div>
+            <br />
             <button class="button">Aplicar</button>
           </section>
         </form>
@@ -94,12 +103,13 @@
           <div class="card__description">
             <ul class="card__ul">
               <li class="card__text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quaerat sed officiis, libero minima accusamus repellendus?
+                Cabaña moderna y acogedora en el medio del bosque para poder
+                disfrutar de la naturaleza unos días.
               </li>
-              <li>Nro. de habitaciones</li>
-              <li>Dirección</li>
-              <li>Teléfono</li>
+              <li>Nro. de habitaciones: 1</li>
+              <li>Cabildo 4801</li>
+              <li>334567832</li>
+            </ul>
             </ul>
           </div>
         </div>
@@ -110,12 +120,12 @@
           <div class="card__description">
             <ul class="card__ul">
               <li class="card__text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quaerat sed officiis, libero minima accusamus repellendus?
+                Hermosa casa minimalista con pileta, a las afueras de la ciudad
+                para que pases unos días en la tranquilidad.
               </li>
-              <li>Nro. de habitaciones</li>
-              <li>Dirección</li>
-              <li>Teléfono</li>
+              <li>Nro. de habitaciones: 5</li>
+              <li>Av. Juncal 2489</li>
+              <li>011435687</li>
             </ul>
           </div>
         </div>
@@ -126,12 +136,12 @@
           <div class="card__description">
             <ul class="card__ul">
               <li class="card__text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quaerat sed officiis, libero minima accusamus repellendus?
+                Una enorme casa para que vos y tu familia pasen unas vacaciones
+                inolvidables, con todas las comodidades que necesites.
               </li>
-              <li>Nro. de habitaciones</li>
-              <li>Dirección</li>
-              <li>Teléfono</li>
+              <li>Nro. de habitaciones: 8</li>
+              <li>Triunvirato 1994</li>
+              <li>2914456678</li>
             </ul>
           </div>
         </div>
@@ -142,12 +152,12 @@
           <div class="card__description">
             <ul class="card__ul">
               <li class="card__text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quaerat sed officiis, libero minima accusamus repellendus?
+                Cabaña moderna y acogedora en el medio del bosque para poder
+                disfrutar de la naturaleza unos días.
               </li>
-              <li>Nro. de habitaciones</li>
-              <li>Dirección</li>
-              <li>Teléfono</li>
+              <li>Nro. de habitaciones: 1</li>
+              <li>Cabildo 4801</li>
+              <li>334567832</li>
             </ul>
           </div>
         </div>
@@ -157,12 +167,12 @@
           <div class="card__description">
             <ul class="card__ul">
               <li class="card__text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quaerat sed officiis, libero minima accusamus repellendus?
+                Hermosa casa minimalista con pileta, a las afueras de la ciudad
+                para que pases unos días en la tranquilidad.
               </li>
-              <li>Nro. de habitaciones</li>
-              <li>Dirección</li>
-              <li>Teléfono</li>
+              <li>Nro. de habitaciones: 5</li>
+              <li>Av. Juncal 2489</li>
+              <li>011435687</li>
             </ul>
           </div>
         </div>
@@ -172,12 +182,12 @@
           <div class="card__description">
             <ul class="card__ul">
               <li class="card__text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quaerat sed officiis, libero minima accusamus repellendus?
+                Una enorme casa para que vos y tu familia pasen unas vacaciones
+                inolvidables, con todas las comodidades que necesites.
               </li>
-              <li>Nro. de habitaciones</li>
-              <li>Dirección</li>
-              <li>Teléfono</li>
+              <li>Nro. de habitaciones: 8</li>
+              <li>Triunvirato 1994</li>
+              <li>2914456678</li>
             </ul>
           </div>
         </div>
@@ -187,12 +197,12 @@
           <div class="card__description">
             <ul class="card__ul">
               <li class="card__text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quaerat sed officiis, libero minima accusamus repellendus?
+                Cabaña moderna y acogedora en el medio del bosque para poder
+                disfrutar de la naturaleza unos días.
               </li>
-              <li>Nro. de habitaciones</li>
-              <li>Dirección</li>
-              <li>Teléfono</li>
+              <li>Nro. de habitaciones: 1</li>
+              <li>Cabildo 4801</li>
+              <li>334567832</li>
             </ul>
           </div>
         </div>
@@ -202,12 +212,12 @@
           <div class="card__description">
             <ul class="card__ul">
               <li class="card__text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quaerat sed officiis, libero minima accusamus repellendus?
+                Hermosa casa minimalista con pileta, a las afueras de la ciudad
+                para que pases unos días en la tranquilidad.
               </li>
-              <li>Nro. de habitaciones</li>
-              <li>Dirección</li>
-              <li>Teléfono</li>
+              <li>Nro. de habitaciones: 5</li>
+              <li>Av. Juncal 2489</li>
+              <li>011435687</li>
             </ul>
           </div>
         </div>
