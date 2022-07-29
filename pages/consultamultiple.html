@@ -130,6 +130,7 @@
               <label for="mensaje">Su consulta</label><br />
               <div class="consultamultiple__center">
                 <textarea
+                  id="consulta"
                   class="consultamultiple__textarea"
                   name="message"
                   rows="12"
@@ -138,7 +139,9 @@
                 ></textarea>
               </div>
               <div class="flex__buttons">
-                <button class="stylish__button">Enviar</button>
+                <button onclick="enviarFormulario()" class="stylish__button">
+                  Enviar
+                </button>
                 <button class="stylish__button" type="reset">Limpiar</button>
               </div>
             </form>
@@ -153,5 +156,6 @@
         <p class="footer__frase">Alojamientos Argentina</p>
       </a>
     </footer>
+    <script src="../js/consultamultiple.js"></script>
   </body>
 </html>
