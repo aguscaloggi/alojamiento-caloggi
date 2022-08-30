@@ -61,7 +61,7 @@
             <h1 class="consultamultiple__titulo">
               ¿Querés realizar tu consulta a varios alojamientos?
             </h1>
-            <form action="">
+            <form action="/" id="form" novalidate>
               <div class="consultamultiple__labelinput">
                 <label for="flname">Nombre y Apellido completo</label>
                 <input
@@ -139,7 +139,11 @@
                 ></textarea>
               </div>
               <div class="flex__buttons">
-                <button onclick="enviarFormulario()" class="stylish__button">
+                <button
+                  onclick="enviarFormulario()"
+                  class="stylish__button"
+                  type="submit"
+                >
                   Enviar
                 </button>
                 <button class="stylish__button" type="reset">Limpiar</button>
@@ -156,7 +160,7 @@
         <p class="footer__frase">Alojamientos Argentina</p>
       </a>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.29/dist/sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
     <script src="../js/consultamultiple.js"></script>
   </body>

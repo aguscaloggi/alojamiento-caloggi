@@ -168,7 +168,7 @@
           <!-- En el caso de que el cliente quiera consultar a un alojamiento en particular lo podrá hacer desde aquí -->
           <div class="alojamientox__form">
             <h1 class="titulo-pregunta">¿Querés realizar tu consulta?</h1>
-            <form action="">
+            <form action="/" id="form" novalidate>
               <div class="alojamientox__labelinput">
                 <label for="flname">Nombre y Apellido completo</label>
                 <input
@@ -241,7 +241,13 @@
                 ></textarea>
               </div>
               <div class="flex__buttons">
-                <button class="alojamientox__button">Enviar</button>
+                <button
+                  class="alojamientox__button"
+                  onclick="enviarFormulario()"
+                  type="submit"
+                >
+                  Enviar
+                </button>
                 <button class="alojamientox__button" type="reset">
                   Limpiar
                 </button>
@@ -270,5 +276,8 @@
         <p class="footer__frase">Alojamientos Argentina</p>
       </a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.29/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+    <script src="../js/alojamientox.js"></script>
   </body>
 </html>
